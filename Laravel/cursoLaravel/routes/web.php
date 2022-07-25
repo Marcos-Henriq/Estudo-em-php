@@ -15,7 +15,11 @@ AQUI QUE SE CRIA ROTAS DE ACESSO AS PAGINAS.
 // INDEX
 
 Route::get('/', function () {
-    return view('welcome');
+    $nome = 'Marcos';
+    $idade = 18;
+    $profissao = 'Estágiario';
+
+    return view('welcome', ['nome' => $nome, 'idade' => $idade, 'profissao' => $profissao]);
 });
 
 
