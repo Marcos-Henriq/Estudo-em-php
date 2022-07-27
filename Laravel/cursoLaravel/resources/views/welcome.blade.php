@@ -78,6 +78,28 @@
         @else
         <p>não é o maicu :(</p>
         @endif
+
+        @for($i = 0;$i < count($array);$i++) <p>{{$array[$i]}}</p>
+            @if($array[$i] == 3)
+            <p>É o 3</p>
+            @endif
+            @endfor
+
+
+            @foreach($nomes as $nome)
+            <p> {{$loop->index}}</p>
+            <p>{{$nome}}</p>
+            @endforeach
+
+            @php
+            $name = 'João';
+            echo $name;
+            @endphp
+
+
+            {{-- ASSIM QUE SE FAZ UM COMENTARIO NO BLADE --}}
+
+
 </body>
 
 </html>
